@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+
+    <title> بيانات المستخدم</title>
+</head>
+
+<body>
+    <header style="text-align:center;">
+        <br>
+        <img src="img/1.png" alt="logo" width="100px">
+        <br><br><br><br>
+    </header>
+    <table border="1" width="100%" style="text-align: center;">
+        <thead>
+            
+            <th colspan="4"> بيانات العقد</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>اسم البلدية</td>
+                <td>نوع العقد (مزايدات)</td>
+                <td colspan="2">اسم المشروع </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="textname"></label>
+                    <input type="text" id="textname" name="textname">
+                </td>
+                <td> <label for="Contract"></label>
+                    <input type="radio" name="Contract" id="Contract">
+                </td>
+                <td colspan="2"><label for="project"></label>
+                    <input type="text" id="project" name="project">
+                </td>
+            </tr>
+            <tr>
+                <td>تاريخ بداية العقد</td>
+                <td>مدة العقد بالسنة</td>
+                <td>تاريخ نهاية العقد</td>
+                <td> مدة السماح بالاشهر</td>
+            </tr>
+            <tr>
+                <td><label for="date"></label>
+                    <input type="date" id="date" name="date">
+                </td>
+                <td> <label for="time"></label>
+                    <input type="number" id="time" name="time" value="0">
+                </td>
+                <td><label for="end"></label>
+                    <input type="date" id="end" name="end">
+                </td>
+                <td><label for="Allow"></label>
+                    <input type="number" id=Allow name="Allow" value="0">
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+    <table border="1" width="100%" style="text-align: center;">
+        <thead>
+            <th colspan="4"> بيانات المستثمر</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>نوع الاستثمار</td>
+                <td>رقم المستثمر </td>
+                <td>اسم المستثمر</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="individual"></label>فرد
+                    <input type="radio" name="radio" id="individual">
+
+                    <label for="company">شركة </label>
+                    <input type="radio" name="radio" id="company">
+
+                    <label for="Establishment">مؤسسة</label>
+                    <input type="radio" name="radio" id="Establishment">
+                </td>
+                <td> <label for="number"></label>
+                    <input type="number" id="number" name="number" value="0">
+                </td>
+                <td><label for="namein"></label>
+                    <input type="text" id="namein" name="namein">
+                </td>
+            </tr>
+            <tr>
+                <td>القيمة الإيجارية السنوية</td>
+                <td>نشاط العقد الرئيسي</td>
+                <td>نشاط العقد الفرعي</td>
+
+            </tr>
+            <tr>
+                <td> <label for="numbery"></label>
+                    <input type="number" id="numbery" name=y value="0">
+                </td>
+                <td> <label for="select"></label>
+                    <select name="select" id="select">
+                        <option value="نشاط1">نشاط1</option>
+                        <option value="نشاط2">نشاط2</option>
+                        <option value="نشاط3">نشاط3</option>
+                    </select>
+                </td>
+                <td><label for="selectt"></label>
+                    <select name="selectt" id="selectt">
+                        <option value="نشاط1">نشاط1</option>
+                        <option value="نشاط2">نشاط2</option>
+                        <option value="نشاط3">نشاط3</option>
+                    </select>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+    <table border="1" width="100%" style="text-align: center;">
+        <thead>
+            <th colspan="4"> بيانات المكانية</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>الموقع</td>
+                <td>رقم القطعة</td>
+                <td>المساحة/م2</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="location"></label>
+                    <input type="text" id="location" name="location">
+                </td>
+                <td> <label for="numberp"></label>
+                    <input type="number" id="numberp" name="numberp" value="0">
+                </td>
+                <td><label for="num"></label>
+                    <input type="number" id="num" name="num" value="0">
+                </td>
+            </tr>
+
+        </tbody>
+    </table><br>
+    <table border="1" width="100%" >
+        <tr>
+            <td style="text-align: left;"><button type="button"  >حفظ بيانات العقد</button></td>
+            <td style="text-align: right;"><button><a href="./loginindex.html" class="btn btn-primary">العودة الى الصفحة الرئيسية</a></button></td>
+        </tr>
+        </table>
+
+        <footer style="text-align: center;">
+            <br><br><br><br><br>
+            <hr style=" border-color:rgb(8, 183, 136)  ;">
+            &copy;هديل الهندي &nbsp;2022
+        </footer>
+</body>
+
+</html>
